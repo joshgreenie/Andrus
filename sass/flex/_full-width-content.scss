@@ -1,0 +1,84 @@
+.full-width-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.full-width-content.content-position-left {
+  display: block;
+  margin: 0 auto;
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.full-width-content.content-position-center {
+  display: block;
+  margin: 0 auto;
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.full-width-content.content-position-right {
+  display: block;
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+.full-width-wrapper {
+  border-top: 5px solid $andrus_blue;
+  margin-top: 5px;
+  background-position: center;
+
+
+  &.white-overlay {
+    position: relative;
+    &:after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.65);
+      z-index: 0;
+    }
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .blue-bg {
+    background: $andrus_blue;
+    position: relative;
+    margin-bottom: 10px;
+
+    h2 {
+      margin: 0;
+      color: #fff;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      border-bottom: 5px solid $andrus_blue;
+    }
+  }
+
+
+  h2 {
+    //margin: 0;
+    color: $andrus_blue;
+  }
+}
+

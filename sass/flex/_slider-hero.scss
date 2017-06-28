@@ -1,0 +1,425 @@
+.hero-wrapper {
+
+  @media screen and (max-width: 768px) {
+    max-height: 670px;
+  }
+
+  .owl-carousel {
+    position: relative;
+
+    .owl-item {
+
+      @media screen and (max-width: 980px) {
+
+      }
+    }
+
+    .item {
+      position: relative;
+
+      .container {
+        position: relative;
+        z-index: 99999999999;
+      }
+
+      @media screen and (max-width: 980px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: #084ba1;
+        position: relative;
+      }
+
+      .slide-image-left {
+        width: 100%;
+        height: 100%;
+        max-width: 50%;
+        background-size: cover;
+        background-position: center right;
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+
+        @media screen and (max-width: 980px) {
+          width: 100%;
+          position: relative;
+          min-height: 350px;
+          max-width: 100%;
+          background-size: cover;
+        }
+
+        @media screen and (max-width: 768px) {
+          min-height: 210px;
+        }
+
+        @media screen and (max-width: 500px) {
+          min-height: 150px;
+        }
+      }
+
+      .slide-image-right {
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 50%;
+        padding: 0;
+        height: 100%;
+        background-size: cover;
+        background-position: center right;
+
+        @media screen and (max-width: 980px) {
+          min-height: 350px;
+          position: relative;
+          z-index: 1;
+        }
+
+        @media screen and (max-width: 768px) {
+          min-height: 210px;
+        }
+
+        @media screen and (max-width: 500px) {
+          min-height: 150px;
+        }
+
+      }
+
+      .slide-content {
+        width: 46%;
+        margin: auto;
+        z-index: 9;
+        position: relative;
+        right: -8px;
+        background-position: 0px -1px;
+        background-size: calc(100% + 2px);
+
+
+        @media screen and (max-width: 1500px) {
+          width: 58%;
+        }
+
+        @media screen and (max-width: 1200px) {
+          width: 70%;
+        }
+
+        @media screen and (max-width: 980px) {
+          width: 100%;
+        }
+
+        .slide-icon {
+          max-width: calc(100% - 113px);
+          margin: 0 auto;
+          position: relative;
+
+          @media screen and (max-width: 980px) {
+            max-width: 100%;
+          }
+
+          .slider-text {
+            color: #fff;
+            max-width: calc(100% - 240px);
+            margin: 0 auto;
+            text-align: center;
+            min-height: 670px;
+            position: relative;
+
+            @media screen and (max-width: 980px) {
+              max-width: 100%;
+              min-height: 0;
+            }
+
+            @media screen and (max-width: 768px) {
+              min-height: 200px;
+            }
+          }
+
+          h1 {
+            margin: 0;
+            line-height: .9;
+            @media screen and (max-width: 768px) {
+              font-size: 3rem;
+            }
+
+            @media screen and (max-width: 500px) {
+              font-size: 2.3rem;
+            }
+
+
+            &:first-of-type {
+              padding-top: 100px;
+              font-size: 112.05px;
+              font-weight: 600;
+
+              @media screen and (max-width: 980px) {
+                padding-top: 50px;
+              }
+
+              @media screen and (max-width: 768px) {
+                font-size: 6rem;
+              }
+
+              @media screen and (max-width: 500px) {
+                padding-top: 2rem;
+                font-size: 4rem;
+              }
+            }
+          }
+          h2 {
+            padding-top: 1.5em;
+            position: relative;
+            line-height: 1.2;
+            margin: 0 auto;
+            max-width: 85%;
+            font-size: 2rem;
+
+            &::before {
+              content: '';
+              position: absolute;
+              width: 90%;
+              height: 1px;
+              top: 30px;
+              background: #fff;
+              left: calc(50% - 120px);
+
+              @media screen and (max-width: 980px) {
+                left: calc(0% + 75px);
+                width: calc(100% - 150px);
+                top: 20px;
+              }
+            }
+
+            @media screen and (max-width: 768px) {
+
+              padding-bottom: 2rem;
+
+              &::before {
+                width: 300px !important;
+                left: calc(0% + 40px);
+              }
+            }
+
+            @media screen and (max-width: 500px) {
+
+              padding: 2rem 0;
+              font-size: 1.5rem;
+
+
+              &::before {
+                width: 100% !important;
+                left: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px;
+      transform: translateY(-185%);
+      .owl-prev, .owl-next {
+        font-size: 60px;
+      }
+    }
+    .owl-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      bottom: -90px;
+      .owl-dot {
+        display: inline-block;
+        position: relative;
+        top: -100px;
+        span {
+          display: inline-block;
+          border-radius: 30px;
+          transition: all .35s ease-in-out;
+          height: 13px;
+          width: 13px;
+          margin: 5px;
+          background: #fff;
+          opacity: .56;
+        }
+        &:hover span {
+          background-color: #869791;
+        }
+      }
+      .active span {
+        background: #fff !important;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*********************
+*******************/
+
+.cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  background: $andrus_red;
+  padding: 5px 0;
+
+  &.hero-desktop {
+    @media screen and (max-width: 980px) {
+      display: none;
+    }
+  }
+
+  a {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    h2 {
+      padding: 0 15px 0 !important;
+      float: left;
+      transition: all .35s ease-in-out;
+      margin: 0 !important;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  img {
+    float: right;
+    width: auto !important;
+  }
+
+  &:hover {
+
+    a {
+      h2 {
+        padding-right: 30px !important;
+      }
+    }
+  }
+}
+
+/****************
+*    Temporarily hides Owl Nav until styling can be fixed
+*****************/
+
+.hero-wrapper .owl-nav {
+  display: none !important;
+}
+
+@media screen and (max-width: 980px) {
+
+  .slide-content {
+    width: 100%;
+    right: 0;
+    background-image: none !important;
+  }
+
+  .item .container {
+    position: relative;
+  }
+
+  .slide-icon {
+    max-width: 100%;
+  }
+
+  .slider-text {
+    max-width: 100%;
+    min-height: 250px;
+    margin: 0 auto;
+
+    h1:first-of-type {
+      padding-top: 1rem;
+    }
+
+    h2 {
+      max-width: calc(100% - 240px);
+      margin: 0 auto;
+
+      @media screen and (max-width: 768px) {
+        max-width: calc(100% - 70px);
+        padding-top: 2rem;
+      }
+
+      &::before {
+        width: 470px;
+        left: calc(0% + 20px);
+
+        @media screen and (max-width: 768px) {
+          top: 16px;
+          width: 340px !important;
+        }
+      }
+    }
+  }
+
+  .cta-wrapper {
+    margin-top: 2rem;
+
+    h2 {
+      margin: .2rem 0;
+    }
+  }
+
+  .hero-wrapper .owl-dots {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .hero-wrapper {
+    border-bottom: 5px solid $andrus_blue;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .cta-wrapper.hero-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .hero-wrapper .owl-carousel .item .slide-image-left {
+    z-index: 1;
+  }
+
+
+  .hero-wrapper .owl-carousel .item .slide-image-right {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .owl-carousel-hero .item .cta-wrapper.hero-mobile {
+    margin-top: 0;
+    min-height: 60px;
+  }
+  .hero-wrapper .owl-carousel .item .container {
+    min-height: 200px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .slider-text {
+    h2 {
+      max-width: 100%;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+

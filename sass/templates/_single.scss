@@ -1,0 +1,33 @@
+main#main.position {
+  padding: 30px 0;
+  h1.entry-title {
+    font-size: 2.6rem;
+    margin: 0;
+    color: $andrus_blue;
+  }
+  .entry-content {
+    margin: 0;
+
+    h3 {
+      margin: 10px 0;
+      line-height: 1;
+      color: $andrus_blue;
+    }
+  }
+}
+
+.position-template-default {
+  span.license + span:before {
+    content: ',';
+    padding-right: 10px;
+    margin-left: -5px;
+  }
+
+  span.type + span:before {
+    content: '- ';
+  }
+}
+
+main#main.position h1.entry-title span:first-child:before {
+  content: '- ';
+}

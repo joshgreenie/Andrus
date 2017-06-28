@@ -1,0 +1,127 @@
+body {
+  .form-banner-wrapper {
+
+    margin-top: 6px;
+
+    .banner-color-overlay {
+      padding: 2rem 0;
+
+      .form {
+        .gform_wrapper {
+
+          ul li.gfield {
+            margin-top: 15px;
+          }
+
+          input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+          textarea,
+          select {
+            margin: 0;
+            line-height: 1.8;
+            font-size: 1rem;
+            padding-left: 20px;
+            font-weight: 600;
+            border-radius: 0;
+            text-transform: uppercase;
+
+          }
+
+          .gform_heading {
+
+            margin: 0;
+
+            h3.gform_title {
+              font-size: 4rem;
+              margin: 0;
+              font-weight: 400;
+            }
+          }
+
+          .top_label {
+            div.ginput_container {
+              margin: 0;
+            }
+
+          }
+
+          .gform_footer {
+            margin: 0;
+            text-align: right;
+
+            input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
+              width: 20%;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-banner-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-color-overlay {
+  background: rgba(8, 75, 161, 0.85);
+}
+
+body .form-banner-wrapper .form .gform_wrapper .gform_heading h3.gform_title {
+  color: #fff;
+}
+
+body .form-banner-wrapper .form .gform_wrapper ul li.gfield .ginput_container input::placeholder,
+body .form-banner-wrapper .form .gform_wrapper ul li.gfield .ginput_container textarea::placeholder,
+body .form-banner-wrapper .form .gform_wrapper ul li.gfield .ginput_container select::placeholder {
+  color: $andrus_blue;
+}
+
+body .gform_footer input.gform_button.button[type="submit"] {
+  font-size: 1.8rem !important;
+  line-height: .6 !important;
+  background: $andrus_red;
+  box-shadow: none;
+  border: 0;
+  color: #fff;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  background-image: url("/wp-content/uploads/2017/05/white-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  @include transition(background-position .35s ease-in-out);
+  padding-bottom: 18px;
+
+
+  &:hover {
+    background-position: 85% 60%;
+  }
+}
+
+body .form-banner-wrapper .banner-color-overlay .form .gform_wrapper .gform_footer input.button, body .form-banner-wrapper .banner-color-overlay .form .gform_wrapper .gform_footer .gform_wrapper .gform_footer input[type=submit], body .form-banner-wrapper .banner-color-overlay .form .gform_wrapper .gform_footer .gform_wrapper .gform_page_footer input.button, body .form-banner-wrapper .banner-color-overlay .form .gform_wrapper .gform_footer .gform_wrapper .gform_page_footer input[type=submit] {
+
+
+@media screen and (max-width: 980px) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body .gform_footer input.gform_button.button[type="submit"]:hover {
+    background-position: 72% 60%;
+
+  }
+
+  body .gform_footer input.gform_button.button[type="submit"] {
+    background-position: 70% 65%;
+    transition: all .35s ease-in-out;
+  }
+}
+

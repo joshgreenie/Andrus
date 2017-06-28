@@ -1,0 +1,258 @@
+.site-branding {
+  width: 300px;
+  float: left;
+}
+
+.main-navigation {
+  display: block;
+  float: left;
+  width: calc(100% - 350px);
+
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    float: right;
+
+    ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 1.5em;
+      left: -999em;
+      z-index: 99999;
+
+      ul {
+        left: -999em;
+        top: 0;
+      }
+
+      li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
+
+      :hover > a,
+      .focus > a {
+      }
+
+      a:hover,
+      a.focus {
+      }
+    }
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    float: left;
+    position: relative;
+    margin-right: 4em;
+
+    &.menu-item-has-children a {
+      padding-right: 3.5rem;
+    }
+
+    &:hover > a,
+    &.focus > a {
+    }
+
+    &:last-of-type {
+      margin-right: -2.5rem;
+
+      @media screen and (max-width: 1550px) {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      font-size: 1.5rem;
+      font-family: $font__headers;
+      font-weight: 400;
+      color: $andrus_blue;
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+  }
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+  }
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  background: #fff;
+  width: 300px;
+  left: 0;
+  top: calc(100% - 2px);
+  border-bottom: 4px solid $andrus_blue;
+}
+
+.main-navigation li > ul > li {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  border: 1px solid #cacaca;
+  height: 100%;
+  > a {
+    padding-left: 20px;
+  }
+}
+
+
+.main-navigation {
+  width: 100%;
+  float: right;
+  li {
+    margin-right: 0;
+
+    a {
+      padding: 1.5rem 2.5rem;
+
+      @media screen and (max-width: 1200px) {
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
+}
+
+.main-navigation li > ul > li a {
+  padding: 6px;
+}
+
+.main-navigation li > ul > li:hover {
+  background: #eee;
+}
+
+header#masthead {
+  z-index: 99;
+}
+
+.main-navigation ul ul {
+  z-index: 99999;
+}
+
+.main-navigation > div > ul > li:first-of-type > a::after {
+  content: '\f105';
+  font-family: FontAwesome;
+  position: absolute;
+  right: 25px;
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 1;
+  transition: all .35s ease-in-out;
+}
+
+ul#primary-menu
+> li:hover {
+  background: $andrus_blue;
+}
+
+ul#primary-menu
+> li:hover > a {
+  color: #fff;
+}
+
+.main-navigation li {
+  transition: all .35s ease-in-out;
+}
+
+ul#primary-menu
+> li:hover > a::after {
+  transform: rotate(90deg);
+  color: #fff;
+}
+
+
+
+
+
+/***********************
+*   MOVED TO meanmenu.css
+***********************/
+
+//@media screen and (max-width: 980px) {
+//
+//  body.mean-container {
+//
+//    div.mean-bar {
+//      width: 99.9%;
+//
+//      nav.mean-nav {
+//
+//        width: 100.1%;
+//        margin-top: 73px;
+//        position: absolute;
+//
+//        ul#primary-menu {
+//          li.menu-item {
+//            a {
+//
+//              background: #ddd;
+//              color: darkblue;
+//              font-size: 2rem;
+//              font-family: "Bebas Neue";
+//              padding: .75rem;
+//              width: 100%;
+//              text-align: center;
+//              border-top: 1.5px solid rgba(49, 43, 43, 0.54);
+//
+//              &:hover {
+//                background: #cec9c9;
+//              }
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

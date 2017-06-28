@@ -1,0 +1,45 @@
+.pb-wrapper {
+  width: 100%;
+  text-align: center;
+  background: #4f7baa;
+}
+
+.pb-text {
+  color: #fff;
+  padding: 20px 0;
+  h2 {
+    margin: 0;
+  }
+  h1 {
+    margin: 0;
+    font-size: 91px;
+    line-height: .8;
+    padding-bottom: 15px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 6rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 25px 0;
+  }
+}
+
+
+
+.pb-content-wrapper {
+  background: $andrus_blue;
+  border-top-right-radius: calc(7% + 10px) calc(55% + 30px);
+  border-bottom-left-radius: calc(7% + 10px) calc(55% + 30px);
+
+  @media screen and (max-width: 980px) {
+    border-top-right-radius: calc(7% + 30px) calc(50% + 30px);
+    border-bottom-left-radius: calc(7% + 30px) calc(50% + 30px);
+  }
+
+  @media screen and (max-width: 500px) {
+    border-top-right-radius: calc(7% + 60px) calc(40% + 40px);
+    border-bottom-left-radius: calc(7% + 60px) calc(40% + 40px);
+  }
+}
