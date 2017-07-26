@@ -31,12 +31,12 @@
                                     <?= $header ? "<h1>$header</h1>" : ""; ?>
                                     <?= $header_small ? "<h1>$header_small</h1>" : ""; ?>
                                     <?= $subheader ? "<h2>$subheader</h2>" : ""; ?>
-                                    <?= $cta_link ? "<div class='cta-wrapper hero-desktop'><a href='$cta_link'><h2>$cta_text</h2><img  src='/wp-content/uploads/2017/05/white-arrow-right.png'></a></div>" : "" ?>
+                                    <?= $cta_link ? "<div class='cta-wrapper hero-desktop  white-arrow'><a href='$cta_link '><h2>$cta_text</h2></a></div>" : "" ?>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <?= $cta_link ? "<div class='cta-wrapper hero-mobile'><a href='$cta_link'><h2>$cta_text</h2><img src='/wp-content/uploads/2017/05/white-arrow-right.png'></a></div>" : "" ?>
+                    <?= $cta_link ? "<div class='cta-wrapper hero-mobile  white-arrow'><a href='$cta_link'><h2>$cta_text</h2></a></div>" : "" ?>
                     <div class="slide-image-right" style="background-image: url(<?= $background_right ?>)"></div>
                     <style>  
                         @media screen and (max-width:980px) {

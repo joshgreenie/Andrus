@@ -1,0 +1,78 @@
+
+.gallery-wrap {
+
+  max-width: 850px;
+  margin-right: -100px;
+  .item {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+      position: absolute;
+      left: 0;
+      margin: 0;
+      background: $andrus_blue;
+      color: #fff;
+      width: 100%;
+      padding: 0 30px;
+      bottom: 10px;
+      top: auto;
+      &:after {
+        content: '';
+        width: 100%;
+        border-bottom: 5px solid $andrus_blue;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
+  }
+
+  .owl-dots {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .owl-dot {
+    position: relative;
+    min-width: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    span {
+      display: block;
+      background-position: center !important;
+      background-size: cover !important;
+      transition: all .35s ease;
+      &:after {
+        content: '';
+        display: block;
+        padding-top: 56.25%;
+      }
+
+      &:hover {
+        opacity: .8;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .owl-nav.disabled {
+    display: none;
+  }
+
+}
+
+body:not(.home) .content-flex-wrapper .main-content-wrapper {
+  z-index: 99;
+  position: relative;
+}

@@ -26,6 +26,9 @@ $extra_class = get_sub_field('extra_class');
 
 $job_listings = get_sub_field('job_listings');
 
+$gallery_check = get_sub_field('gallery_check');
+$images = get_sub_field('gallery');
+
 $background_image = get_sub_field('background_image');
 $background_imageURL = $background_image['url'];
 $background_imageStyle = "background-image:url($background_imageURL);";
@@ -103,6 +106,25 @@ $background_imageStyle = "background-image:url($background_imageURL);";
                         <?= $main_title ? "<h2>$main_title</h2>" : "" ?>
                         <?= $main_content ? $main_content : "" ?>
                     </div>
+
+                    <?php if (!(is_front_page()) && ($gallery_check == TRUE)) { ?>
+                        <div class="gallery-wrap">
+
+                        <?php if( $images ): ?>
+                        <div class="owl-carousel thumbs">
+                        <?php foreach( $images as $image ): ?>
+                            <div class="item"
+                                 style="background-image: url(<?php echo $image['url']; ?>)"
+                                 data-dot="<span style='background-image:url(<?php echo $image['url']; ?>)'></span>">
+                               <h3><?php echo $image['caption']; ?></h3>
+                            </div>
+                        <?php endforeach; ?>
+                        </div>
+                        <?php endif; ?>
+                        </div>
+                    <?php } ?>
+
+
                 </div>
             <?php } ?>
 
@@ -111,7 +133,7 @@ $background_imageStyle = "background-image:url($background_imageURL);";
                     <div class="ribbon-content">
                         <?= $sibebar_title ? "<h2 class='ribbon-title'>$sibebar_title</h2>" : ""; ?>
                         <?= $sidebar_content ?>
-                        <?= $cta_link ? "<div class='cta-wrapper'><a href='$cta_link'><h2>$cta_text</h2><img src='/wp-content/uploads/2017/05/white-arrow-right.png'></a></div>" : "" ?>
+                        <?= $cta_link ? "<div class='cta-wrapper  white-arrow'><a href='$cta_link'><h2>$cta_text</h2></a></div>" : "" ?>
                     </div>
                 </div>
             </div>

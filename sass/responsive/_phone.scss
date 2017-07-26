@@ -1,0 +1,23 @@
+.mean-container .mean-nav ul li li a {
+  opacity: 1 !important;
+}
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper .ribbon-content ul {
+  margin-left: 25px;
+  padding-right: 25px;
+}
+
+.ss-banner-wrapper .ss-banner {
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+
+.vid-list-wrapper .vid-box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonials-wrapper .vid-list-wrapper .vid-box .vid-wrapper {
+  min-height: 170px;
+}

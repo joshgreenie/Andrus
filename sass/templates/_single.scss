@@ -31,3 +31,51 @@ main#main.position {
 main#main.position h1.entry-title span:first-child:before {
   content: '- ';
 }
+
+
+.half {
+  @include j-column(1/2, 0 , 2, 0);
+
+  @media screen and (max-width: 980px) {
+
+    @include j-column(1, 0 , 1, 0);
+
+    ul, ol {
+      margin:0;
+    }
+  }
+}
+
+.position-footer {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  h3 {
+    color: $andrus_blue;
+    margin: 0 0 10px 0;
+  }
+  ul {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+
+  > div {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 0;
+  }
+}

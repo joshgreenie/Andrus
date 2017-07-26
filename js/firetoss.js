@@ -32,12 +32,21 @@
         $('.owl-carousel-hero').owlCarousel({
             dots: true,
             autoHeight:true,
-            autoplay: false,
+            autoplay: true,
+            autoplayTimeout: 7000,
             loop: true,
             items: 1,
             nav: true,
             navText: [ "<span class='arrow'><img src='/wp-content/uploads/2017/05/slider-arrow-left.png'></span>", "<span class='arrow'><img src='/wp-content/uploads/2017/05/slider-arrow-right.png'></span>" ],
             singleItem: true
+        });
+
+
+        $('.owl-carousel.thumbs').owlCarousel({
+            dots: true,
+            dotsData: true,
+            autoplay: false,
+            items: 1
         });
 
 

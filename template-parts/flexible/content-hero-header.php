@@ -21,7 +21,7 @@ $cta_link   = get_sub_field('cta_link');
             <div class="hero-ribbon-content">
                 <h1 class="hero-title"><?= $title ? $title : "" ?></h1>
                 <h2 class="hero-subtitle"><?= $subtitle ? $subtitle : "" ?></h2>
-                <?= $cta_link ? "<div class='cta-wrapper'><a href='$cta_link'><h2>$cta_text</h2><img src='/wp-content/uploads/2017/05/white-arrow-right.png'></a></div>" : "" ?>  
+                <?= $cta_link ? "<div class='cta-wrapper  white-arrow'><a href='$cta_link'><h2>$cta_text</h2></a></div>" : "" ?>
             </div>
         </div>
     </div>

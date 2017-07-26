@@ -10,6 +10,9 @@ Dont show over 980px - Menu Styles here
 
 
 
+.testimonials-wrapper.with-banner .testimonial-content {width: 630px;}
+
+
 /*===================================
   Media Queries
 ===================================*/
@@ -34,9 +37,18 @@ Dont show over 980px - Menu Styles here
 }
 
 
+@media (min-width: $breakpoint-tablet) {
+  body:not(.home) .content-flex-wrapper.padded .ribbon-wrapper[style*="url('http://andrus.devft.com/wp-content/themes/firetoss_seed-andrus/img/med-tall-ribbon.svg')"] {
+    min-height: 700px;
+  }
+}
 @media (max-width: $breakpoint-tablet) {
   .container {
     max-width:750px;
+  }
+
+  span.hide-mobile {
+    display: none;
   }
 
   @import "tablet";
@@ -50,6 +62,7 @@ Dont show over 980px - Menu Styles here
 
   @import "sm-tablet";
 }
+
 
 
 @media (max-width: $breakpoint-phone) {

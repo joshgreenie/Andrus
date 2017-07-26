@@ -16,7 +16,7 @@
                 <div class="column-dropdown">
                     <div class="column-content">
                         <?= $content; ?>
-                        <?= $link ? "<span><a href='$link'><p>$cta_text</p><img src='/wp-content/uploads/2017/05/white-arrow-right.png' alt='icon'></a></span>" : "" ?>
+                        <?= $link ? "<span class=' white-arrow'><a href='$link'><p>$cta_text</p></a></span>" : "" ?>
                     </div>
                 </div>
             </div>

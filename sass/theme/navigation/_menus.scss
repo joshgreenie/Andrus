@@ -55,7 +55,7 @@
     position: relative;
     margin-right: 4em;
 
-    &.menu-item-has-children a {
+    &.menu-item-has-children > a {
       padding-right: 3.5rem;
     }
 
@@ -131,20 +131,26 @@
 .main-navigation ul li.focus > ul {
   background: #fff;
   width: 300px;
-  left: 0;
+  left: calc(100% - 115px);
   top: calc(100% - 2px);
   border-bottom: 4px solid $andrus_blue;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .main-navigation li > ul > li {
   position: relative;
   width: 100%;
-  text-align: left;
+  text-align: center;
   margin: 0;
   border: 1px solid #cacaca;
   height: 100%;
   > a {
-    padding-left: 20px;
+    padding: 3px 20px !important;
+    font-size: 1.4rem
   }
 }
 
@@ -181,7 +187,7 @@ header#masthead {
   z-index: 99999;
 }
 
-.main-navigation > div > ul > li:first-of-type > a::after {
+.main-navigation > div > ul > li.menu-item-has-children > a::after {
   content: '\f105';
   font-family: FontAwesome;
   position: absolute;

@@ -45,11 +45,9 @@ $apply_text = get_field('apply_text', 'option');
 $apply_link = get_field('apply_link', 'option');
 
 
-
 ?>
-<div id="page" class="site <?=$class;?>">
+<div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'firetoss_seed'); ?></a>
-
     <div class="banner-wrapper">
         <div class="container">
             <div class="banner">

@@ -1,0 +1,295 @@
+.banner-wrapper .banner .br-l {
+  width: auto;
+}
+
+.banner-wrapper .banner .banner-right {
+  display: flex;
+}
+.content-flex-wrapper .content-flex {
+  background-size: contain;
+  background-position: top center;
+}
+.column-wrapper .column .column-dropdown .column-content {
+  /* margin-top: 50px !important; */
+}
+
+
+.column-wrapper .column {
+  min-height: 125px;
+  max-height: 125px;
+  height: 125px;
+  background-position: 50% 35%;
+}
+
+.column-wrapper .column:hover .column-dropdown .column-content {
+  margin-top: -125px;padding-top: 125px;padding-bottom: 40px;}
+
+.column-wrapper .column:hover {
+  height: auto;
+  max-height: 700px;
+}
+
+
+.column-wrapper .column .column-dropdown {
+  position: static;
+}
+
+.column-wrapper .column .header-wrapper {
+  background: rgba(7, 72, 142, 0.7);
+}
+
+.column-wrapper .column:hover .header-wrapper {
+  background:none;}
+
+.column-wrapper .column .column-dropdown {
+  -webkit-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: height .35s ease-in-out;
+}
+.column-wrapper .column {}
+
+.column-wrapper .column .column-dropdown {
+  position: static;
+}
+
+.column-wrapper .column .header-wrapper {
+  background: rgba(7, 72, 142, 0.7);
+}
+
+.column-wrapper .column:hover .header-wrapper {
+  background:none;}
+
+.column-wrapper .column .column-dropdown {
+  -webkit-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: height .35s ease-in-out;
+}
+
+
+
+.mean-bar {
+  height: 0;
+  min-height: 0 !important;
+}
+
+header#masthead .site-branding {
+  position: relative;
+  padding-bottom: 8px;
+  top: 0;
+  z-index: 99;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  top: 0 !important;
+}
+
+.mean-container .mean-nav ul li a.mean-expand::after {
+  right: 19px;
+}
+body.home .hero-header-wrapper {
+  position: static;
+  height: auto;
+  background-color: #1151a4;
+  background-image: none !important;
+  padding: 0 40px;
+}
+
+
+body.home .hero-header-wrapper .hero-ribbon-wrapper {
+  margin-top: 0;
+  background: none;
+}
+
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper::before {
+  left: -99%;
+  background: rgba(7, 72, 142, 1);
+}
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper {
+  background: rgba(7, 72, 142, 1);
+}
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper::after {
+  background: rgba(7, 72, 142, 1);
+  right: -99%;
+}
+
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper .ribbon-content ul {
+  padding-left: 0;
+}
+
+.hero-header-wrapper {
+  position: relative;
+  padding-top: 25%;
+  background-position: 50% 0%;
+  height: auto;
+  background-size: 100%;
+}
+
+.hero-header-wrapper .hero-ribbon-wrapper {
+  margin-top: 0;
+}
+.cta-wrapper {
+  min-width: 180px;
+}
+
+.split-shelf-wrapper .ss-content-wrapper .cta-wrapper img {
+  margin-right: 20px;
+}
+
+.banner-wrapper {
+  z-index: 999;
+}
+.gallery-wrap {
+  max-width: 100%;
+}
+
+body:not(.home) .content-flex-wrapper.padded .ribbon-wrapper {
+  padding: 40px 20px;
+}
+
+.content-flex-wrapper .content-flex {
+  z-index: 9;
+}
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper .ribbon-content ul {
+  width: 100%;
+}
+
+body:not(.home) .content-flex-wrapper .ribbon-wrapper::before {
+  top: 0;
+}
+
+.gallery-wrap .owl-dot {
+  min-width: 140px;
+}
+body:not(.home) .content-flex-wrapper .main-content-wrapper {
+  text-align: left;
+}
+
+
+
+body:not(.home) .ribbon-wrapper div#gform_wrapper_3 {
+  display: none;
+}
+body.single-position:not(.home) .ribbon-wrapper div#gform_wrapper_3 {
+  display: block;
+}
+
+div#thin-banner .thin-wrapper h2 {
+  font-size: 3rem;
+}
+
+div#thin-banner .thin-wrapper h3 {font-size: 2rem;text-align: center;}
+
+div#thin-banner .thin-wrapper {
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 5px 0 10px;
+}
+
+.pb-text h1 {
+  font-size: 4rem;
+}
+
+
+body:not(.home) .content-flex-wrapper.padded .content-flex {
+  background-size: cover;
+  background-position: 30% 0%;
+}
+.full-width-wrapper .full-width-wysiwyg h3 {
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.full-width-wrapper .full-width-wysiwyg h3 + p {
+  margin-top: 5px;
+}
+.testimonials-wrapper .testimonial-content .cta-wrapper.white img {
+  left: auto;
+}
+
+.testimonials-wrapper.with-banner .testimonial-content {width: 100%;background-image: none;background-color: #084ba1;margin: 0;border-top: 5px solid #fff;padding: 20px 10%;}
+
+.testimonials-wrapper.with-banner .vid-bg {
+  margin-top: 20px;
+}
+
+body .testimonials-wrapper + .form-banner-wrapper {
+  margin-top: 0;
+}
+
+.hero-header-wrapper .hero-ribbon-wrapper .hero-ribbon-content h2.hero-subtitle {
+  padding: 0 10%;
+  margin-top: 0;
+}
+.full-width-wysiwyg .wp-caption {
+  width: 100%;
+  max-width: 100%;
+}
+
+body.page-id-8:not(.home) .content-flex-wrapper.contact .thirds {
+  padding: 0;
+}
+
+body.page-id-8:not(.home) .content-flex-wrapper.contact .thirds:last-child h3 {
+  display: none;
+}
+
+body .gform_footer input.gform_button.button[type="submit"] {
+  width: calc(100% - 15px) !important;
+  height: auto !important;
+  line-height: 1 !important;
+  padding-bottom: 13px;
+  background-size: 13px;
+  background-position: calc(50% + 60px) center;
+}
+
+body .gform_footer input.gform_button.button[type="submit"]:hover {
+  background-position: calc(50% + 70px) center;
+}
+.vid-list-wrapper .vid-box .vid-title h3 {
+  font-size: 1.6rem;
+}
+
+
+.column-wrapper .column {
+  height: auto !important;
+  min-height: 0;
+  max-height: none;
+}
+
+.column-wrapper .column .column-dropdown {
+  height: auto !important;
+  height: 100% !important;
+}
+
+.column-wrapper .column .column-dropdown .column-content {
+  margin-top: -125px;
+  padding-top: 125px;
+  padding-bottom: 40px;
+  max-height: calc(100% - 150px);
+  height: 100%;
+  opacity: 1;
+}
+
+.column-wrapper .column .header-wrapper {
+  background: none;
+}
+
+.column-wrapper .column .header-wrapper img {
+  display: none;
+}
+
+.column-wrapper .column .header-wrapper h2 {
+  width: 100%;
+  text-align: left;
+}
+

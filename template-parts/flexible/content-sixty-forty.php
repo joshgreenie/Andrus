@@ -6,11 +6,8 @@
  * Time: 10:31 AM
  */
 
-
 $banner_text_left = get_sub_field('banner_text_left');
 $banner_text_right = get_sub_field('banner_text_right');
-
-
 ?>
 
 
@@ -48,9 +45,14 @@ $banner_text_right = get_sub_field('banner_text_right');
                 <?php $i = 1 ?>
 
 
-                <div class="split-shelf-wrapper">
+                <div class="split-shelf-wrapper
+                 <?php if(!$split_content && !$split_title && !$testimonials && !$testimonials && !$large_image ):?>
+                 no-content
+                 <?php endif;?>
+
+">
                     <div class="large-image-wrapper"
-                         style="background-image:url(<?= $large_image ? $large_image : "" ?>">
+                         style="background-image:url(<?= $large_image ? $large_image : "" ?>)">
                         <?php if ($testimonials) { ?>
                             <a href="#" data-featherlight="#largeVid">
                                 <img src="/wp-content/uploads/2017/05/play-icon.png" alt="play">
@@ -62,7 +64,8 @@ $banner_text_right = get_sub_field('banner_text_right');
                         <?php } ?>
                     </div>
                     <div class="small-image-wrapper"
-                         style="background-image:url(<?= $small_image ? $small_image : "" ?>">
+                         style="background-image:url(<?= $small_image ? $small_image : "" ?>)">
+                        <?php if($split_content || $split_title || $testimonials):?>
                         <div class="ss-content-wrapper">
 
                             <?= $split_title ? "<h2>$split_title</h2>" : "" ?>
@@ -81,7 +84,7 @@ $banner_text_right = get_sub_field('banner_text_right');
 
                                         <div class="small-vid">
                                             <div class="small-vid-bg"
-                                                 style="background-image:url(<?= $small_image ? $small_image : "" ?>">
+                                                 style="background-image:url(<?= $image ? $image : "" ?>)">
                                                 <a href="#" data-featherlight="#smallVid-<?= $i ?>">
                                                     <img src="/wp-content/uploads/2017/05/play-icon.png"
                                                          alt="play-icon">
@@ -90,7 +93,7 @@ $banner_text_right = get_sub_field('banner_text_right');
                                             <?= $title ? "<h6>$title</h6>" : "" ?>
                                         </div>
                                         <div id="smallVid-<?= $i ?>" class="hide-small-vids">
-                                            <?= $large_testimonial_video; ?>
+                                            <?= $testimonial_video; ?>
                                         </div>
                                         <?php $i++ ?>
                                     <?php endwhile; ?>
@@ -101,12 +104,16 @@ $banner_text_right = get_sub_field('banner_text_right');
                             <?php } ?>
 
 
-                            <?= $cta_link ? "<div class='cta-wrapper'><a href='$cta_link'><h2>$cta_text</h2><img src='/wp-content/uploads/2017/05/white-arrow-right.png'></a></div>" : "" ?>
+                            <?= $cta_link ? "<div class='cta-wrapper white-arrow'><a href='$cta_link'><h2>$cta_text</h2></a></div>" : "" ?>
                         </div>
+
+                            <?php
+                        endif; ?>
                     </div>
                 </div>
 
             <?php endwhile;
         endif; ?>
+
     </div>
 </div>

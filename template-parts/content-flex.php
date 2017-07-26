@@ -21,6 +21,7 @@ $contentOptions = array(
     'positions_banner'     => 'positions-banner',
     'sixty_forty'          => 'sixty-forty',
     'form_banner'          => 'form-banner',
+    'thin_banner'          => 'thin-banner',
 
 );
 // check if the flexible content field has rows of data

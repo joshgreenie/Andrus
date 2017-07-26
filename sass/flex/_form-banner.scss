@@ -91,13 +91,15 @@ body .gform_footer input.gform_button.button[type="submit"] {
   font-family: "Bebas Neue", sans-serif;
   background-image: url("/wp-content/uploads/2017/05/white-arrow-right.png");
   background-repeat: no-repeat;
-  background-position: 80% center;
+  background-position: calc(50% + 55px) center;
+  text-indent: -15px;
+
   @include transition(background-position .35s ease-in-out);
   padding-bottom: 18px;
 
 
   &:hover {
-    background-position: 85% 60%;
+    background-position: calc(50% + 70px) center;
   }
 }
 
@@ -115,7 +117,7 @@ body .form-banner-wrapper .banner-color-overlay .form .gform_wrapper .gform_foot
 
 @media screen and (max-width: 980px) {
   body .gform_footer input.gform_button.button[type="submit"]:hover {
-    background-position: 72% 60%;
+    background-position: 72% 65%;
 
   }
 

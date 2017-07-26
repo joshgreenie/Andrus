@@ -5,10 +5,10 @@
   width: 100%;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+//.container {
+//  max-width: 1440px;
+//  margin: 0 auto;
+//}
 
 .full-width-content.content-position-left {
   display: block;
@@ -17,6 +17,7 @@
   width: 100%;
   text-align: left;
 }
+
 
 .full-width-content.content-position-center {
   display: block;
@@ -33,12 +34,27 @@
   text-align: right;
 }
 
+.full-width-content {
+  padding:25px 0;
+}
+
 .full-width-wrapper {
   border-top: 5px solid $andrus_blue;
   margin-top: 5px;
   background-position: center;
 
+  .full-width-wysiwyg {
+    h3 {
+      color: $andrus_blue;
+      margin: 0;
+      clear: none;
+    }
+  }
 
+
+  h2.full-width-subheader {
+    margin-bottom: 0;
+  }
   &.white-overlay {
     position: relative;
     &:after {
@@ -79,6 +95,39 @@
   h2 {
     //margin: 0;
     color: $andrus_blue;
+    clear: none;
   }
 }
 
+
+
+.full-width-wysiwyg .wp-caption {
+  max-width: calc(50% + 100px);
+}
+.wp-caption figcaption.wp-caption-text {
+  margin: 5px 0;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.wp-caption.alignleft {
+  margin-left: 0;
+  margin-top: 0;
+
+  figcaption.wp-caption-text {
+    text-align: left;
+  }
+}
+
+.alignright.wp-caption {
+  margin-right: 0;
+  margin-top: 0;
+  figcaption.wp-caption-text {
+    text-align: right;
+  }
+}
+h3, h2 {
+  &.clear {
+    clear: both !important;
+  }
+}

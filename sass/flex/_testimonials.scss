@@ -75,6 +75,11 @@
         border-radius: 0px 8% 0px 0px/0px 16% 0px 0px;
         -webkit-border-radius: 0px 8% 0px 0px/0px 16% 0px 0px;
         -moz-border-radius: 0px 8% 0px 0px/0px 16% 0px 0px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
 
         @media screen and (max-width: 980px) {
           border-radius: 0;
@@ -125,10 +130,67 @@
       margin: 2.5rem 0;
     }
   }
+
+  &.with-banner {
+    .testimonial-content {
+      background-image: url(/wp-content/themes/firetoss_seed-andrus/img/med-tall-ribbon.svg);
+      width: calc(35% + 100px);
+      background-size: cover;
+      background-position: center;
+      margin-left: -40px;
+      padding: 50px 140px 20px;
+      color: #fff;
+    }
+
+
+    .vid-bg {
+      margin-top: 40px;
+      border-radius: 0px 28% 0px 0px/0px 16% 0px 0px;
+      -webkit-border-radius: 0px 28% 0px 0px/0px 16% 0px 0px;
+      -moz-border-radius: 0px 28% 0px 0px/0px 16% 0px 0px;
+      margin-right: 0;
+    }
+    .large-wrapper .vid-bg::before {
+      border-radius: 0px 28% 0px 0px/0px 16% 0px 0px;
+      -webkit-border-radius: 0px 28% 0px 0px/0px 16% 0px 0px;
+      -moz-border-radius: 0px 28% 0px 0px/0px 16% 0px 0px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+    .testimonials-header h3 {
+      text-align: center;
+      max-width: 200px;
+      padding: 0 5px 15px;
+      line-height: 1.2;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+      margin-bottom: 40px;
+    }
+  }
+
+  &.with-blue-header {
+    padding-bottom: 0;
+    .testimonials-header {
+      background-color: #084ba1;
+      h2 {
+        margin: 0;
+        padding: 5px 0 10px;
+        text-align: left;
+        color: #fff;
+        line-height: 1;
+      }
+    }
+  }
 }
+
+
 
 .vid-list-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 
   @media screen and (max-width: 980px) {
@@ -189,6 +251,10 @@
         height: 100%;
         background: rgba(35, 31, 32, .33);
         z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
       }
 
       img {
@@ -216,9 +282,15 @@
   display: none;
 }
 
-.vid-box + div#smallVideo {
+.vid-box + div[id*='smallVideo'] {
   display: none;
 }
+
+.vid-box + div[id*='largeVideo'] {
+  display: none;
+}
+
+
 
 .vid-bg
 a {
@@ -339,4 +411,8 @@ a {
       }
     }
   }
+}
+
+body:not(.home) .content-flex-wrapper.contact .ribbon-content ul.links {
+  margin-top: 30px;
 }
