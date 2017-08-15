@@ -6346,6 +6346,10 @@ Dont show over 980px - Menu Styles here
   .vid-list-wrapper .vid-box .vid-title h3 {
     font-size: 1.8rem; } }
 
+@media (max-width: 1400px) and (min-width: 980px) {
+  body:not(.home).page-id-341 .content-flex-wrapper .ribbon-wrapper {
+    background-image: url(http://andrus.devft.com/wp-content/themes/firetoss_seed-andrus/img/tall-ribbon.svg) !important; } }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 950px; }
@@ -6628,4 +6632,3 @@ Dont show over 980px - Menu Styles here
   -webkit-transition: height 500ms ease-in-out;
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out; }
-

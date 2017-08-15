@@ -27,6 +27,11 @@ Dont show over 980px - Menu Styles here
 }
 
 
+@media (max-width: 1400px) and (min-width: 980px) {
+  body:not(.home).page-id-341 .content-flex-wrapper .ribbon-wrapper {
+    background-image: url(http://andrus.devft.com/wp-content/themes/firetoss_seed-andrus/img/tall-ribbon.svg) !important;
+  }
+}
 @media (max-width: $breakpoint-small-desktop) {
   .container {
     max-width:950px;
